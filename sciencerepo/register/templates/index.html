@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cadastrar novo artigo científico</title>
-    </head>
-    <body>
-        <h1>Aqui você irá cadastrar  um novo artigo</h1>
 
-        <h2>Atente-se aos seguintes pontos</h2>
-        <p1>Título</p1>
-        <p2>Autor(es)</p2>
-        <p3>Area</p3>
-        <p4>Artigo em formato .pdf para fazer o upload</p4>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar novo artigo científico</title>
+</head>
+
+<body>
+    <h1>Aqui você irá cadastrar um novo artigo</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="form-text">Titulo do artigo: </label>
+            <input type="text" class="form-control" id="subject-title" aria-describedby="subjectTitle"
+                placeholder="Titulo">
+        </div>
+        <div class="form-group">
+            <label for="author">Autores do artigo: </label>
+            <input type="text" class="form-control" id="author-input"
+                placeholder="Autor(es)">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Anexe o artigo em pdf</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</body>
+
 </html>
